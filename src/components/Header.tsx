@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Button } from './ui/button'
 import { Nav } from './Nav'
+import { Button } from './ui/button'
 
 const Header = () => {
   return (

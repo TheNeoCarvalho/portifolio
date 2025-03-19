@@ -1,4 +1,6 @@
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -18,10 +20,10 @@ export const metadata: Metadata = {
     title: "Manoel Carvalho | Desenvolvedor Fullstack",
     description: "Desenvolvedor Fullstack especializado em Node.js, ReactJS e React Native. Confira meus projetos, habilidades e experiência em desenvolvimento de aplicações web e mobile.",
     type: "website",
-    url: "https://seusite.com",
+    url: "https://manoelcarvalho.vercel.app",
     images: [
       {
-        url: "https://seusite.com/imagem-de-destaque.jpg",
+        url: "https://manoelcarvalho.vercel.app/imagem-de-destaque.jpg",
         width: 1200,
         height: 630,
         alt: "Portfólio - Manoel Carvalho",
@@ -41,7 +43,10 @@ export default function RootLayout({
         className={`${jetBrainsMono.variable} ${jetBrainsMono.variable} antialiased`}
       >
         <Header />
-        {children}
+        <StairTransition />
+        <PageTransition>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );

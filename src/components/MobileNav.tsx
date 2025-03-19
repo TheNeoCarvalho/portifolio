@@ -5,32 +5,11 @@ import {
     SheetContent,
     SheetTrigger
 } from '@/components/ui/sheet'
+import Links from '@/data/menu.json'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { CiMenuFries } from 'react-icons/ci'
 
-const links = [
-    {
-        name: 'home',
-        path: '/'
-    },
-    {
-        name: 'serviços',
-        path: '/services'
-    },
-    {
-        name: 'skills',
-        path: '/resume'
-    },
-    {
-        name: 'trabalhos',
-        path: '/work'
-    },
-    {
-        name: 'contato',
-        path: '/contact'
-    }
-]
 
 const MobileNav = () => {
 
@@ -44,7 +23,7 @@ const MobileNav = () => {
             <SheetContent className='flex flex-col'>
                 <nav className='flex flex-col justify-center items-center gap-8'>
                     {
-                        links.map((link, index) => {
+                        Links.map((link, index) => {
                             return <Link
                                 className='text-black border-accent capitalize hover:transition-all'
                                 key={index}

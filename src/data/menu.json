@@ -1,0 +1,22 @@
+[
+    {
+        "name": "home",
+        "path": "/"
+    },
+    {
+        "name": "serviços",
+        "path": "/services"
+    },
+    {
+        "name": "skills",
+        "path": "/resume"
+    },
+    {
+        "name": "trabalhos",
+        "path": "/work"
+    },
+    {
+        "name": "contato",
+        "path": "/contact"
+    }
+]

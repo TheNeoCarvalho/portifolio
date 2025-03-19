@@ -7,13 +7,12 @@ import {
 } from '@/components/ui/sheet'
 import Links from '@/data/menu.json'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { CiMenuFries } from 'react-icons/ci'
 
 
 const MobileNav = () => {
 
-    const pathName = usePathname()
+    // const pathName = usePathname()
 
     return (
         <Sheet>
